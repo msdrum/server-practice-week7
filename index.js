@@ -12,6 +12,7 @@ app.use(express.json());
 connect();
 
 //rotas
+app.use("/user", userRoute);
 
 // o servidor subindo pro ar.
 app.listen(process.env.PORT, () => {
